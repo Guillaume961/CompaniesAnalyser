@@ -1,0 +1,2 @@
+# CompaniesAnalyser
+NoSQL Project
