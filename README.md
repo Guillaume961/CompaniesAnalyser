@@ -8,6 +8,10 @@ You will need [Node.js](https://nodejs.org/en/) to run the application.
 ```node
 npm install
 ```
+You need to listen on http://localhost:3200/menu after having run the command :  
+```command
+node serv.js
+```
 You will need to import to your mongoDB database a correct companies dataset.
 You can find a .json samples in the folder dataset.
 
