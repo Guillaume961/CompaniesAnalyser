@@ -15,7 +15,7 @@ You need to listen on http://localhost:3200/menu after having run the command :
 node serv.js
 ```
 You will need to import to your mongoDB database a correct companies dataset.
-You can find a .json samples in the folder dataset.
+You can find .json samples in the folder dataset.
 
 ## What it does
 It allows you to execute customized queries on the dataset and find companies informations such as the founded year, the number of emloyees, the countries it is located in, its turnover and its official website url.
