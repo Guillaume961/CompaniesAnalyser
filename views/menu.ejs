@@ -168,12 +168,13 @@
             </p>
 
             <div class="alert alert-info text-center">
-              <p>[ajouter input pour chemin ici ? ou renvoyer vers nouvelle page ?]</p>
-              <form method="post" enctype="multipart/form-data" action="/upload">
+              <form method="post" enctype="multipart/form-data" action="/update">
                 <input type="hidden" name="msgtype" value="2"/>
                 <input type="file" name="dataset" />
-                <input type="submit" value="Import" />
+                <input type="submit" value="Import"></input>
+                <p><% if(importStat==true){%> vous avez importé le JSON <%}%></p>
               </form>
+
             </div>
 
             <h2>EXECUTE QUERIES</h2>
@@ -181,7 +182,6 @@
               Define your query with the followings options. Then execute it.
             </p>
             <div class="alert alert-info">
-              <p>[ajouter le formulaire ici ? ou renvoyer vers nouvelle page ?]</p>
               <form id="companies_form" method="post" action="/menu">
                 <div class="row">
                   <center><label id="relationships" style="font-weight:bold; font-size:18px;"> NAME </label></center>
@@ -372,8 +372,7 @@
           </div>
         </div>
           <div>
-            <p>[afficher le resultat ici ?]</p>
-            <p> TEST AFFICHAGE DATA </p>
+            <p> AFFICHAGE RESULTS </p>
             <script>/*
             $(document).ready(function(){
               $('#companies_form').ready(function(){
@@ -398,15 +397,15 @@
             });*/
             </script>
             <% if(results != null){
-            for (var i in results) { %>
-              <li>Name : <%= results[i]._id %> - URL : <%= results[i].url %>
-                - COUNTRIES : [<%= results[i].code %>] - EMPLOYEES : <%= results[i].staff %>
-                - FUNDED YEAR : <%= results[i].founded_year %> - TURNOVER : <%= (results[i].total)/1000 %>K $</li>
-            <% }}else{ %> Execute a query <%} %>
+              for (var i in results) { %>
+                <li>Name : <%= results[i]._id %> - URL : <%= results[i].url %>
+                  - COUNTRIES : [<%= results[i].code %>] - EMPLOYEES : <%= results[i].staff %>
+                  - FUNDED YEAR : <%= results[i].founded_year %> - TURNOVER : <%= (results[i].total)/1000 %>K $</li>
+              <% }}else{ %> Execute a query <%} %>
             <div class="table-responsive">
               <table class="table">
                 <p><span id="display"></span></p>
-                <p><span>test1</span></p>
+
               </table>
             </div>
           </div>
