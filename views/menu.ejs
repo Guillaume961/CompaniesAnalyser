@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!--[if IE]>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <![endif]-->
+  <title>Companies Analyser</title>
+  <!--REQUIRED STYLE SHEETS-->
+  <!-- BOOTSTRAP CORE STYLE CSS -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet" />
+  <!-- FONTAWESOME STYLE CSS -->
+  <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+  <!-- CUSTOM STYLE CSS -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]--></head>
+  <body>
+    <!-- on inclut la bibliothèque depuis les serveurs de Google -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+    <!-- NAV SECTION -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">NOSQL PROJECT</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#home-sec">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#project">PROJECT</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <!--END NAV SECTION -->
+
+    <!--HOME SECTION-->
+    <div id="home-sec">
+      <div class="container"  >
+        <div class="row text-center">
+          <div  class="col-md-12" >
+            <span class="head-main" >Companies Analyser</span>
+            <h3 class="head-last col-md-8 col-md-offset-2  col-sm-8 col-sm-offset-2">/ ESILV NOSQL PROJECT /</h3>
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!--END HOME SECTION-->
+    <!--ABOUT SECTION-->
+    <section id="about"  >
+      <div class="container">
+        <div class="row g-pad-bottom ">
+          <div class="col-md-6 ">
+
+            <div class="panel-group" id="accordion">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h4 class="panel-title panel-title-adjust">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                      <i class="fa fa-plus"></i> INTRODUCTION
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <h3>Introduction</h3>
+                    To build this application, our team decided to use nodejs.</br>
+                    For the data managing part, we had to choose between the 3 different DBMS we saw in course
+                    (Cassandra, MongoDB and Elasticsearch). We chose to work with MongoDB.
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-success">
+                <div class="panel-heading">
+                  <h4 class="panel-title panel-title-adjust">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                      <i class="fa fa-plus"></i>PROJECT OUTLINES
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <h3>Web application</h3>
+                    Our application is composed of 2 mains features:</br>
+                    - Importing the dataset</br>
+                    - Executing customized queries
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title panel-title-adjust">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapsefour">
+                      <i class="fa fa-plus"></i>TEAM
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapsefour" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <h3>Team composition</h3>
+                    AROUNASSALAME Harry</br>
+                    AUDIBERTI Guillaume</br>
+                    DOYENNEL Quentin</br>
+                    HERVELIN Nicolas
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-md-6 ">
+            <h1 >THE PROJECT</h1>
+            <h4>What we were asked for</h4>
+            <p>
+              We had to choose a dataset on which we will work. Every member of our group wanted to use the companies dataset.
+              What was expected for this project was :
+              <li>a connection feature</li>
+              <li>a dataset importation system</li>
+              <li>a least 3 different interactions to show the content (embedded queries)</li>
+              <li>a form to query to dataset</li></br>
+              Also, we needed to provide a report with a readme, explanations of our choices and our sourcecode structure.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!--END ABOUT SECTION-->
+
+    <!--PROJECT SECTION-->
+    <section id="project" >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+
+            <img src="assets/img/project.jpg" class="img-responsive img-thumbnail" alt="">
+          </div>
+          <div class="col-md-6">
+
+            <h2>IMPORT YOUR DATASET</h2>
+            <p>
+              Indicate the path of the .json file you want to import.</br>
+              It has to be a 'companies format' dataset.
+            </p>
+
+            <div class="alert alert-info text-center">
+              <p>[ajouter input pour chemin ici ? ou renvoyer vers nouvelle page ?]</p>
+              <form method="post" enctype="multipart/form-data" action="/upload">
+                <input type="hidden" name="msgtype" value="2"/>
+                <input type="file" name="dataset" />
+                <input type="submit" value="Import" />
+              </form>
+            </div>
+
+            <h2>EXECUTE QUERIES</h2>
+            <p>
+              Define your query with the followings options. Then execute it.
+            </p>
+            <div class="alert alert-info">
+              <p>[ajouter le formulaire ici ? ou renvoyer vers nouvelle page ?]</p>
+              <form id="companies_form" method="post" action="/menu">
+                <div class="row">
+                  <center><label id="relationships" style="font-weight:bold; font-size:18px;"> NAME </label></center>
+                  <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                  </div>
+                  <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 text-center panel panel-primary">
+                  </br>
+                    <div class="form-group">
+                      <label> Company name : </label>
+                      <input id="name" name="name" type="text"/>
+                    </div>
+                  </div>
+                  <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                  </div>
+                </div>
+                </br>
+                <div class="row">
+                  <center><label class="search_category" style="font-weight:bold; font-size:18px;">
+                    BUSINESS LINE
+                  </label></center>
+                  <div id="search_items">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 panel panel-primary">
+                      <input type="radio" class="search_item" name="business_line" value=" " checked="checked" hidden="hidden"/>
+                      <div>
+                      <input type="radio" class="search_item" name="business_line" value="advertising"> advertising</input>
+                      </div>
+                      <div>
+                      <input type="radio" class="search_item" name="business_line" value="analytics"> analytics</input>
+                      </div>
+                      <div>
+                      <input type="radio" class="search_item" name="business_line" value="biotech"> biotech</input>
+                      </div>
+                      <div>
+                      <input type="radio" class="search_item" name="business_line" value="consulting"> consulting</input>
+                      </div>
+                      <div>
+                      <input type="radio" class="search_item" name="business_line" value="ecommerce"> ecommerce</input>
+                      </div>
+                      <div>
+                      <input type="radio" class="search_item" name="business_line" value="enterprise"> enterprise</input>
+                      </div>
+                      <div>
+                      <input type="radio" class="search_item" name="business_line" value="finance"> finance</input>
+                      </div>
+                      <div>
+                      <input type="radio" class="search_item" name="business_line" value="games_video"> games video</input>
+                      </div>
+                      <div>
+                      <input type="radio" class="search_item" name="business_line" value="hardware"> hardware</input>
+                      </div>
+                      <div>
+                      <input type="radio" class="search_item" name="business_line" value="messaging"> messaging</input>
+                      </div>
+                      <div>
+                      <input type="radio" class="search_item" name="business_line" value="mobile"> mobile</input>
+                      </div>
+                      <div>
+                      <input type="radio" class="search_item" name="business_line" value="network_hosting"> network hosting</input>
+                      </div>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 panel panel-primary">
+                      <div>
+                      <input type="radio" class="search_item" name="business_line" value="news"> news</input>
+                      </div>
+                      <div>
+                      <input type="radio" class="search_item" name="business_line" value="photo_video"> photo video</input>
+                      </div>
+                      <div>
+                      <input type="radio" class="search_item" name="business_line" value="public_relations"> public relations</input>
+                      </div>
+                      <div>
+                      <input type="radio" class="search_item" name="business_line" value="real_estate"> real estate</input>
+                      </div>
+                      <div>
+                      <input type="radio" class="search_item" name="business_line" value="search"> search</input>
+                      </div>
+                      <div>
+                      <input type="radio" class="search_item" name="business_line" value="security"> security</input>
+                      </div>
+                      <div>
+                      <input type="radio" class="search_item" name="business_line" value="social"> social</input>
+                      </div>
+                      <div>
+                      <input type="radio" class="search_item" name="business_line" value="software"> software</input>
+                      </div>
+                      <div>
+                      <input type="radio" class="search_item" name="business_line" value="sports"> sports</input>
+                      </div>
+                      <div>
+                      <input type="radio" class="search_item" name="business_line" value="travel"> travel</input>
+                      </div>
+                      <div>
+                      <input type="radio" class="search_item" name="business_line" value="web"> web</input>
+                      </div>
+                      <div>
+                      <input type="radio" class="search_item" name="business_line" value="other"> other</input>
+                      </div>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    </div>
+                  </div>
+                </div>
+              </br>
+                <div class="row">
+                  <center><label id="founded_date" style="font-weight:bold; font-size:18px;">FOUNDED DATE</label></center>
+                  <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                  </div>
+                  <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 text-center panel panel-primary">
+                  </br>
+                    <div class="form-group">
+                      <label>Greater than : </label>
+                      <select class="form-group" id="search_range_low_founded_year" name="range_low_founded_year">
+                        <option disabled selected value> Founded year </option>
+                        <script>
+                        function dateOptions()
+                        {
+                          var i;
+                          for(i = 0;i <174; i++){
+                            document.getElementById("search_range_low_founded_year").options[i+1] = new Option(2013-i,2013-i);
+                          }
+                        }
+                        dateOptions();
+                        </script>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label>Lower than : </label>
+                      <select class="form-group" id="search_range_high_founded_year" name="range_high_founded_year">
+                        <option disabled selected value> Founded year </option>
+                        <script>
+                        function dateOptions()
+                        {
+                          var i;
+                          for(i = 0;i <174; i++){
+                            document.getElementById("search_range_high_founded_year").options[i+1] = new Option(2013-i,2013-i);
+                          }
+                        }
+                        dateOptions();
+                        </script>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                  </div>
+                </div>
+                </br>
+                <div class="row">
+                  <center><label id="raised_money" style="font-weight:bold; font-size:18px;"> MONEY RAISED </label></center>
+                  <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                  </div>
+                  <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 text-center panel panel-primary">
+                  </br>
+                    <div class="form-group">
+                      <label> Greater than (in $) : </label>
+                      <input id="raised_money_low" name="raised_money_low" type="number"/>
+                    </div>
+                    <div class="form-group">
+                      <label> Lower than (in $) : </label>
+                      <input id="raised_money_high" name="raised_money_high" type="number" value="999999999999"/>
+                    </div>
+                    <script type="text/javascript">
+                    var nb_low, nb_high;
+                    window.onload = function(){
+                    nb_low = document.getElementById('raised_money_low');
+                    nb_high = document.getElementById('raised_money_high');
+                    nb_low.onkeypress = keyPress;
+                    nb_high.onkeypress = keyPress;
+                    };
+
+                    function keyPress (e) {
+                    e = e || window.event;
+                    var c = e.keyCode;
+                    return c>=48 && c<=55;
+                    }
+                    </script>
+                  </div>
+                  <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                  </div>
+                </div>
+                </br>
+                <div class="form-group">
+                  <center><input type="submit" class="submit" value="Execute TEST"/></center>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+          <div>
+            <p>[afficher le resultat ici ?]</p>
+            <p> TEST AFFICHAGE DATA </p>
+            <script>/*
+            $(document).ready(function(){
+              $('#companies_form').ready(function(){
+                  $('#companies_form').submit(function (e) {
+                    if($('#name').val() == ""  && $('input[name=business_line]:checked', '#companies_form').val() == ' ' && $('#search_range_high_founded_year').val() == null
+                    && $('#search_range_low_founded_year').val() == null && $('#raised_money_low').val() == 0 && $('#raised_money_high').val() == 999999999999) {
+                      alert('Please, Fill in at least 1 field');
+                      e.preventDefault();
+                      return false;
+                    }
+                    else{
+                      e.preventDefault();
+                      sendCompaniesForm();
+                      return false;
+                    }
+                  });
+
+                function sendCompaniesForm(){
+                  document.getElementById('display').innerHTML = document.getElementById("raised_money_low").value;
+                }
+              });
+            });*/
+            </script>
+            <% if(results != null){
+            for (var i in results) { %>
+              <li>Name : <%= results[i]._id %> - URL : <%= results[i].url %>
+                - COUNTRIES : [<%= results[i].code %>] - EMPLOYEES : <%= results[i].staff %>
+                - FUNDED YEAR : <%= results[i].founded_year %> - TURNOVER : <%= (results[i].total)/1000 %>K $</li>
+            <% }}else{ %> Execute a query <%} %>
+            <div class="table-responsive">
+              <table class="table">
+                <p><span id="display"></span></p>
+                <p><span>test1</span></p>
+              </table>
+            </div>
+          </div>
+      </div>
+    </section>
+    <!--END PROJECT SECTION-->
+
+    <!--FOOTER SECTION -->
+    <div id="footer">
+      2017 ESILV NoSQL Project | All Right Reserved  &nbsp
+      <img src="assets/img/esilv_logo.png" alt="ESILV_logo" style="width:128px;height:37px;">
+    </div>
+    <!-- END FOOTER SECTION -->
+
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY  -->
+    <script src="assets/plugins/jquery-1.10.2.js"></script>
+    <!-- BOOTSTRAP CORE SCRIPT   -->
+    <script src="assets/plugins/bootstrap.min.js"></script>
+    <!-- CUSTOM SCRIPTS -->
+    <script src="assets/js/custom.js"></script>
+
+  </body>
+  </html>
