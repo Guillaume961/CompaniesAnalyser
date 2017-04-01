@@ -3,7 +3,7 @@ var MongoClient = require('mongodb').MongoClient;
 var findData = function(data, callback){
 
   MongoClient.connect("mongodb://localhost:27017/COMPANIES", function(err, db) {
-    var collection = db.collection('test');
+    var collection = db.collection('companies');
 
     var name = data.name;
     var business = data.business;
@@ -62,7 +62,7 @@ var findData = function(data, callback){
 
 var insert = function(arr){
   MongoClient.connect("mongodb://localhost:27017/COMPANIES", function(err, db) {
-    var collection = db.collection('test');
+    var collection = db.collection('companies');
     for(var i = 0; i < arr.length - 1; i++){
       var data = arr[i];
       var obj = JSON.parse(data);
