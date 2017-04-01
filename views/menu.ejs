@@ -172,7 +172,7 @@
                 <input type="hidden" name="msgtype" value="2"/>
                 <input type="file" name="dataset" />
                 <input type="submit" value="Import"></input>
-                <p><% if(importStat==true){%> vous avez importé le JSON <%}%></p>
+                <p><% if(importStat==true){%> <font size="3" color="green">You imported the json successfully</font> <%} else if(importStat=="notvalid"){%> <font size="3" color="red">You must join a valid json file </font><%}%></p>
               </form>
 
             </div>
@@ -365,7 +365,7 @@
                 </div>
                 </br>
                 <div class="form-group">
-                  <center><input type="submit" class="submit" value="Execute TEST"/></center>
+                  <center><input type="submit" class="submit" value="Execute Query"/></center>
                 </div>
               </form>
             </div>

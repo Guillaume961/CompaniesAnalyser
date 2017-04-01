@@ -38,13 +38,17 @@ app.get('/menu', function(req, res){
 
 app.post('/update', upload.single('dataset'),  function(req, res) {
   fs.readFile(__dirname + '/uploads/dataset', 'utf8', function(err, data){
+    var importAnswer = true;
     if (err) {
       return console.log(err);
     }
     var arr = data.split("\n");
 
-    mongoDB.insert(arr);
-    res.render('menu.ejs', {results : null, importStat : true});
+    mongoDB.insert(arr, function(valid){
+      if(valid=='bad')importAnswer = "notvalid";
+      res.render('menu.ejs', {results : null, importStat : importAnswer});
+    });
+
   });
 });
 

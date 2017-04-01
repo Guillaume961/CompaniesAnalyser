@@ -27,7 +27,7 @@ var findData = function(data, callback){
       ]).toArray(function (error, results){
         var i = 0;
         for(var i in results){
-          console.log(results[i]);
+          //console.log(results[i]);
         }
         callback && callback(results);
         console.log('query executed');
@@ -50,7 +50,7 @@ var findData = function(data, callback){
       ]).toArray(function (error, results){
         var i = 0;
         for(var i in results){
-          console.log(results[i]);
+          //console.log(results[i]);
         }
         callback && callback(results);
         console.log('query executed');
@@ -60,8 +60,10 @@ var findData = function(data, callback){
   });
 }
 
-var insert = function(arr){
+var insert = function(arr, callback){
   MongoClient.connect("mongodb://localhost:27017/COMPANIES", function(err, db) {
+
+    try{
     var collection = db.collection('companies');
     for(var i = 0; i < arr.length - 1; i++){
       var data = arr[i];
@@ -71,8 +73,13 @@ var insert = function(arr){
       }, function(err, result) {
         if(err) throw err;
       });
-      console.log("insertion done");
+      //console.log("insertion done");
     }
+    callback && callback("good");
+  }catch(err){
+    console.log("error importing");
+    callback && callback("bad");
+  }
 
   });
 }
