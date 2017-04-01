@@ -5,11 +5,15 @@
 We chose the SGBD MongoDB because we had another project in which we used MongoDB and we already knew how to connect and execute queries from NodeJS.
 
 ## What to do
-Run the following command in your directory to install all the modules needed.<br/>
+First of all you have to create a folder called "uploads" in your CompaniesAnalyser folder.<br/>
+
+Then Run the following command in your directory to install all the modules needed.<br/>
 You will need [Node.js](https://nodejs.org/en/) to run the application.
 ```node
 npm install
+npm install body-parser ejs
 ```
+
 You need to listen on http://localhost:3200/menu after having run the command :  
 ```command
 node serv.js
