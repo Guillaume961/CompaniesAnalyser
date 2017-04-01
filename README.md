@@ -22,7 +22,7 @@ Pay attention to import data one by one.
 It allows you to execute customized queries on the dataset and find companies informations such as the founded year, the number of emloyees, the countries it is located in, its turnover and its official website url.
 
 
-## Warning
+## Warnings
 First thing insert only .json files any other extention will crash the application.<br/>
 Second thing we are going to deal with the query filters: <br/>
  - If you enter any name filter do not choose any other filters below <br/>
