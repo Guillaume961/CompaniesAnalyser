@@ -27,12 +27,12 @@ It allows you to execute customized queries on the dataset and find companies in
 
 
 ## Warnings
-First thing insert only .json files any other extention will crash the application.<br/>
+First thing insert only .json files (see the given samples in the dataset folder).<br/>
 Second thing we are going to deal with the query filters: <br/>
  - If you enter any name filter do not choose any other filters below <br/>
  - If not, pay attention to choose every other filters below the name filter <br/>
- 
+
 These warnings are very important, the application could crash if you don't follow them correctly.
- 
+
 ## Licence
 [Uncopyrighted](http://zenhabits.net/uncopyright/)
