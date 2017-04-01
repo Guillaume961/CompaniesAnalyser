@@ -11,7 +11,7 @@ var storage = multer.diskStorage({
     cb(null, (__dirname+'/uploads'))
   },
   filename: function (req, file, cb) {
-    cb(null, file.fieldname)
+    cb(null, file.originalname)
   }
 })
 
@@ -37,19 +37,31 @@ app.get('/menu', function(req, res){
 //POST
 
 app.post('/update', upload.single('dataset'),  function(req, res) {
-  fs.readFile(__dirname + '/uploads/dataset', 'utf8', function(err, data){
-    var importAnswer = true;
-    if (err) {
-      return console.log(err);
-    }
-    var arr = data.split("\n");
 
-    mongoDB.insert(arr, function(valid){
-      if(valid=='bad')importAnswer = "notvalid";
-      res.render('menu.ejs', {results : null, importStat : importAnswer});
+  //test
+  const datasetFolder = __dirname + '/uploads/';
+  fs.readdir(datasetFolder, (err, files) => {
+
+    var importedFileName = files[0];
+
+    fs.readFile(__dirname + '/uploads/'+importedFileName, 'utf8', function(err, data){
+      var importAnswer = importedFileName;
+      if (err) {
+        return console.log(err);
+      }
+      var arr = data.split("\n");
+
+      mongoDB.insert(arr, function(valid){
+        fs.unlink(__dirname + '/uploads/'+importedFileName);
+        if(valid=='bad')importAnswer = "notvalid";
+        res.render('menu.ejs', {results : null, importStat : importAnswer});
+      });
+
     });
 
-  });
+
+  })
+
 });
 
 app.post('/menu', function(req, res){

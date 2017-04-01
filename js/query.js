@@ -73,8 +73,8 @@ var insert = function(arr, callback){
       }, function(err, result) {
         if(err) throw err;
       });
-      //console.log("insertion done");
     }
+    console.log("insertion done");
     callback && callback("good");
   }catch(err){
     console.log("error importing");
