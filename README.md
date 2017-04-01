@@ -28,7 +28,7 @@ Second thing we are going to deal with the query filters: <br/>
  - If you enter any name filter do not choose any other filters below <br/>
  - If not, pay attention to choose every other filters below the name filter <br/>
  
-These warnings are very important, the application could crash if you don't apply them correctly.
+These warnings are very important, the application could crash if you don't follow them correctly.
  
 ## Licence
 [Uncopyrighted](http://zenhabits.net/uncopyright/)
